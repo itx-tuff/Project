@@ -22,6 +22,16 @@ body{
     width: 35%;
     margin-left:15px;
     margin-top:20px;   
+    opacity: 0;
+    transform: translateX(0px);
+    animation: khan 0.5s linear  forwards ;
+    animation-delay: 0.3s;
+}
+@keyframes khan {
+    100%{
+        opacity: 1;
+        transform: translateX(30px);
+    }
 }
 .logo > p{
     font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +39,7 @@ body{
     font-size: 24px;
     font-weight: bolder;
 }
+
 #firstspan{
     color:blue;
 }
@@ -44,6 +55,15 @@ body{
 }
 .left{
     width: 40%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: anim  linear 1s  forwards ;
+}
+@keyframes anim {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 ul{
     display: flex;
@@ -61,7 +81,16 @@ ul>li{
     flex-direction: row;
     width: 20%;
     justify-content: space-evenly;
-    
+    opacity: 0;
+    transform: translateX(30px);
+    animation: animt  linear 2s forwards;
+    animation-delay: 1s;
+}
+@keyframes animt {
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 .right > h3{
     font-weight: bold;
@@ -102,12 +131,32 @@ ul>li{
     margin-top:0;
     margin-top:140px;
 }
+.Contant1{
+    opacity:0;
+    transform: translateY(30px);
+    animation: animate linear 3s  forwards ;
+}
+@keyframes animate {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }   
+}
 .Contant1 > h1{
     line-height: 45px;
 }
 .Contant2{
     margin-left:150px;
     margin-top: 10px;
+    opacity:0;
+    transform: translateY(30px);
+    animation: animat linear 4s  forwards ;
+}
+@keyframes animat {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }   
 }
 #secondbutton{
     width: 80px;
@@ -143,9 +192,21 @@ ul>li{
     display: flex;
     flex-direction: row;
     margin-top:13px;
+    opacity:0;
+    transform: translateX(80px);
+    animation: anima linear 100s  forwards;
+    margin-left: -40px;
+    animation-duration: 0.1s;
 }
+@keyframes anima{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }   
+}
+
 .inputt >input{
-    width:500px;
+    width:550px;
     border:none;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
@@ -170,6 +231,16 @@ ul>li{
     flex-direction: column;
     width: 50%;
     text-align: center;
+    /* opacity:0; */
+    transform: translateX(0px);
+    animation: anima linear 60s  forwards ;
+    animation-duration:1s;
+}
+@keyframes anima{
+    100%{
+        opacity: 1;
+        transform: translateX(30px);
+    }   
 }
 .imagea >img{
     width: 350px;
@@ -207,7 +278,18 @@ ul>li{
     flex-direction: column;
     width: 50%;
     text-align: center;
+    opacity:0;
+    transform: translateX(30px);
+    animation: animat linear 60s  forwards;
+    animation-duration: 1s;
 }
+@keyframes animat{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }   
+}
+
 .wanted > .imagea > img{
     width: 370px;
     margin-left:50px;
@@ -484,7 +566,7 @@ ul>li{
     margin-top: 7px;
 }
 .khan3 > h6{
-    margin-left:195px;
+    margin-left:145px;
     margin-top: 10px;
     color:gray;
 }
@@ -630,258 +712,4 @@ footer{
 }
 .lastdiv > h4{
     margin-top:10px;
-}
-
- /* Media  Quries */
- 
-@media (max-width:1200px) {  
-.nav_bar{
-    height: 70px;
-    }
-.logo{
-    margin-left: 0;
-    width: 100%;
-}
-.left{
-    display: none;
-}
-.right{
-    width: 100%;
-    margin-top: 1px;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-evenly;
-}
-.right > h3 {
-    margin-top:5px;
-}
-.container{
-    width: 100%;
-    height: 680px;
-}
-.contant{
-    margin-top:200px;
-}
-.Contant1 > h1{
-    line-height: 25px;
-    font-size: 18px;
-    margin-left:20px;
-    margin-top:50px;
-}
-.Contant2{
-    margin-left:80px;
-    margin-top: 10px;
-}
-.inputt >input{
-    margin-left: 10px;
-    width:250px;
-}
-.Invest{
-    display: flex;
-    flex-direction: column;
-    height:800px;
-    width: 100%;  
-}
-.invest{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 400px;
-    background-color: rgb(235, 235, 235);
-    margin-top:-70px;
-}
-.imagea{
-    width: 50%;
-}
-.imagea >img{
-    width: 120%;
-    margin-left:-30px;
-    margin-top: 100px;
-}
-.khaaa{
-    width: 50%;  
-    margin-top:80px;  
-}
-.khaaa >h1{
-    line-height: 30px;
-    margin-top: 25px;
-    margin-right: 10px;
-}
-.khaaa >p{
-    width: 100%;
-    margin-left:0px;
-    margin-top:20px;
-}
-.khaaa > button{
-    margin-top:10px;
-}
-.wanted{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 400px;
-    /* border: 2px solid black; */
-    margin-top:-60px;
-}
-.wanted > .imagea > img{
-    width: 115%;
-    margin-left:-20px;
-    margin-top: 100px;
-}
-.wanted >.khaaa >h1{
-    line-height: 30px;
-    margin-top: 60px;
-    margin-right: 10px;
-}
-.wanted >.khaaa >p{
-    width: 100%;
-    margin-left:0px;
-    margin-top:20px;
-}
-.wanted >.khaaa >button{
-    margin-top:10px;
-}
-.secondcontainer{
-    height: 1250px;
-    width: 100%;
-    margin-top:-70px;
-}
-.maincontainer{
-    height: 1000px;
-    margin-top:75px;
-}
-.khan{
-    height:380px;
-    width: 40%;
-    margin-top:80px;
-}
-.Thirdcon{
-    margin-top: -120px;
-}
-.Thirdcontainer{
-    width: 100%;
-    height: 470px;
-    margin-top:-140px;
-}
-.Rightcon{
-    width: 50%;
-}
-.Rightcon > h1{
-    margin-top:100px;
-}
-.leftCon{
-    width: 50%;
-}
-.leftCon > img{
-    width: 100%;
-    margin-top: 180px;
-}
-.Fourthcontainer{
-    height: 150px;
-    width: 100%;
-    margin-top:50px;
-}
-.OnlyButtons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.Buttons{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-left:0px;
-    margin-top:25px;
-}
-.Buttons > button{
-    width: 80px;
-    margin-left:0px;
-    background: none;
-    border:1px solid gray;
-    height: 40px;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
- .par > p{
-    display: none;
-}
-.Fifthcontainer{
-    width:100%;
-    height: 700px;
-}
-.khan1{
-    width: 45%;
-    height: 270px;
-    box-shadow: 0px 1px 5px black;
-}
-.khan1 > h3{
-    margin-left:10px;
-}
-.khan1>p{
-    margin-left:10px ;
-}
-.khan1 > h3{
-    font-size: 17px;
-
-}
-.Third {
-    margin-top: -50px;
-}
-.Fourth{
-    margin-top: -50px;
-}
-.Sixthcontainer{
-    margin-left:10px;
-    margin-top:20px;
-    margin-left: 0px;
-}
-.Sixthcontainer > button{
-    width: 80px;
-    font-size: 12px;
-    margin-left: 0px;
- 
-}
-.Sevencontainer{
-    height: 700px;
-}
-.khan3{
-    width: 45%;
-}
-.khan3 > h6{
-    margin-left:55px;
-   
-}
-.Eightcontainer{
-    height: 950px;
-}
-.one{
-    width: 45%;
-    height: 450px;
-}
-#buttton{
-    margin-left: 35%;
-    margin-top:50px;
-}
-.footer1{
-    justify-content: space-between;
-}
-.f1{
-    margin-top:50px;
-    width: 45%;
-}
-.khan > p {
-    width: 100%;
-    margin-left:0px;
-   
-}
-.khan > img{
-    margin-left:0;
-}
-.khan > button{
-    margin-left: 10px;
-    margin-top:10px;
-}
-
 }
